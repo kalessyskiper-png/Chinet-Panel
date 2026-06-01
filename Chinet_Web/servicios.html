@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Desarrollo Profesional - Bots, Web, Sistemas | Chinet</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Servicios de desarrollo profesional: Bots automáticos, páginas web, sistemas completos, bases de datos, apps móviles, APIs e integraciones.">
+    <meta name="keywords" content="desarrollo web, bots, sistemas ERP, CRM, bases de datos, apps móviles, APIs, integraciones, programación">
+    <meta name="author" content="Chinet">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://chinet.com/servicios.html">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Chinet - Servicios de Desarrollo Profesional">
+    <meta property="og:description" content="Soluciones tecnológicas profesionales para impulsar tu negocio. Bots, web, sistemas, apps y más.">
+    <meta property="og:image" content="https://chinet.com/og-image.jpg">
+    <meta property="og:url" content="https://chinet.com/servicios.html">
+    <meta property="og:type" content="website">
+
+    <!-- Preconnect & Preload -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="script.js" as="script">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <span class="material-symbols-outlined">keyboard_arrow_up</span>
+    </button>
+
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Header -->
+    <header id="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navegación principal">
+            <div class="logo" role="img" aria-label="Logo de Chinet - Tigre profesional" onclick="window.location.href='index.html'">
+                <div class="tiger-logo">
+                    <svg viewBox="0 0 80 80" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo del tigre de Chinet">
+                        <defs>
+                            <linearGradient id="tigerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6600;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#FF8533;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="40" cy="40" r="38" fill="none" stroke="url(#tigerGrad)" stroke-width="2.5"/>
+                        <path d="M25 20 L30 35" stroke="url(#tigerGrad)" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M40 15 L40 30" stroke="url(#tigerGrad)" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M55 20 L50 35" stroke="url(#tigerGrad)" stroke-width="3" stroke-linecap="round"/>
+                        <path d="M30 25 L35 18 L40 25 L45 18 L50 25" fill="none" stroke="url(#tigerGrad)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M28 45 C28 35, 52 35, 52 45 C52 55, 28 55, 28 45" fill="none" stroke="url(#tigerGrad)" stroke-width="3"/>
+                    </svg>
+                </div>
+                <span class="brand-name">CHINET</span>
+            </div>
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="streaming.html" role="menuitem">Streaming</a></li>
+                <li role="none"><a href="servicios.html" class="active" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="precios.html" role="menuitem">Precios</a></li>
+                <li role="none"><a href="contacto.html" role="menuitem">Contacto</a></li>
+            </ul>
+            <button class="cart-btn" id="cartBtn" aria-label="Carrito de compras" onclick="window.location.href='carrito.html'">
+                <span class="material-symbols-outlined" aria-hidden="true">shopping_cart</span>
+                <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+            </button>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+            </button>
+        </nav>
+    </header>
+
+    <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header mesh-bg" aria-label="Encabezado de página">
+        <div class="aurora-effect" aria-hidden="true"></div>
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Inicio</a>
+                <span class="material-symbols-outlined icon-sm" aria-hidden="true">chevron_right</span>
+                <span>Servicios de Desarrollo</span>
+            </div>
+            <h1 class="page-title">
+                <span class="material-symbols-outlined icon-lg" aria-hidden="true">code</span> Servicios de Desarrollo
+            </h1>
+            <p class="page-subtitle">Soluciones tecnológicas profesionales para impulsar tu negocio</p>
+        </div>
+    </section>
+
+    <!-- Development Services Section -->
+    <section id="services" class="section dark-section" aria-label="Servicios de desarrollo">
+        <div class="container">
+            <div class="services-grid">
+                <!-- Bots Automáticos -->
+                <div class="dev-service-card reveal stagger-1">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">smart_toy</span></div>
+                    <h3>Bots Automáticos</h3>
+                    <p>Automatización inteligente con bots personalizados para Telegram, Discord, WhatsApp y más.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Bots de atención al cliente</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Automatización de ventas</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Integración con APIs</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Panel de control incluido</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 60.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre Bots Automáticos" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+
+                <!-- Páginas Web -->
+                <div class="dev-service-card reveal stagger-2">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">language</span></div>
+                    <h3>Páginas Web</h3>
+                    <p>Desarrollo web completo, desde landing pages hasta plataformas complejas con diseño moderno.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Diseño responsive</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> SEO optimizado</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Panel administrable</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Hosting incluido</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 40.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre Páginas Web" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+
+                <!-- Sistemas Completos -->
+                <div class="dev-service-card reveal stagger-3">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">dns</span></div>
+                    <h3>Sistemas Completos</h3>
+                    <p>Software empresarial a medida: CRM, ERP, sistemas de inventario, facturación y más.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Arquitectura escalable</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Base de datos robusta</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Multi-usuario</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Soporte técnico</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 400.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre Sistemas Completos" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+
+                <!-- Base de Datos -->
+                <div class="dev-service-card reveal stagger-4">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">database</span></div>
+                    <h3>Base de Datos</h3>
+                    <p>Diseño, optimización y administración de bases de datos SQL y NoSQL profesionales.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> MySQL, PostgreSQL, MongoDB</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Migración de datos</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Backups automáticos</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Seguridad avanzada</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 120.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre Base de Datos" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+
+                <!-- Apps Móviles -->
+                <div class="dev-service-card reveal stagger-5">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">smartphone</span></div>
+                    <h3>Aplicaciones Móviles</h3>
+                    <p>Desarrollo de apps para iOS y Android con interfaces intuitivas y rendimiento óptimo.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> React Native / Flutter</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Publicación en stores</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Notificaciones push</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Offline mode</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 150.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre Apps Móviles" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+
+                <!-- APIs & Integraciones -->
+                <div class="dev-service-card reveal stagger-6">
+                    <div class="service-icon"><span class="material-symbols-outlined icon-xl" aria-hidden="true">hub</span></div>
+                    <h3>APIs & Integraciones</h3>
+                    <p>Conexión entre sistemas, APIs RESTful, webhooks y automatizaciones personalizadas.</p>
+                    <ul class="dev-features">
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> APIs RESTful</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Integración de pagos</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Webhooks</li>
+                        <li><span class="material-symbols-outlined icon-sm" aria-hidden="true">check_circle</span> Documentación completa</li>
+                    </ul>
+                    <div class="service-price">Desde S/ 90.00</div>
+                    <button class="btn btn-primary contact-btn" aria-label="Consultar sobre APIs e Integraciones" onclick="initiateWhatsAppServiceQuery(this)">
+                        <span class="material-symbols-outlined" aria-hidden="true">mail</span> Consultar
+                    </button>
+                </div>
+            </div>
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-badge">
+                    <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                    <span>Código Profesional</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="material-symbols-outlined" aria-hidden="true">build</span>
+                    <span>Soporte Técnico</span>
+                </div>
+                <div class="trust-badge">
+                    <span class="material-symbols-outlined" aria-hidden="true">update</span>
+                    <span>Actualizaciones Gratis</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-tiger">
+                        <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo del tigre de Chinet">
+                            <circle cx="30" cy="30" r="28" fill="none" stroke="#FF6600" stroke-width="2"/>
+                            <path d="M20 18 L24 28" stroke="#FF6600" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M30 15 L30 25" stroke="#FF6600" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M40 18 L36 28" stroke="#FF6600" stroke-width="2.5" stroke-linecap="round"/>
+                            <path d="M22 35 C22 28, 38 28, 38 35 C38 42, 22 42, 22 35" fill="none" stroke="#FF6600" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <span class="brand-name">CHINET</span>
+                    <p>Tu portal digital de confianza</p>
+                    <div class="footer-trust-badges">
+                        <div class="footer-trust-badge">
+                            <span class="material-symbols-outlined" aria-hidden="true">lock</span>
+                            <span>Pago Seguro</span>
+                        </div>
+                        <div class="footer-trust-badge">
+                            <span class="material-symbols-outlined" aria-hidden="true">verified</span>
+                            <span>Garantía 30 Días</span>
+                        </div>
+                        <div class="footer-trust-badge">
+                            <span class="material-symbols-outlined" aria-hidden="true">headset_mic</span>
+                            <span>Soporte 24/7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces</h4>
+                    <a href="index.html">Inicio</a>
+                    <a href="streaming.html">Streaming</a>
+                    <a href="precios.html">Precios</a>
+                    <a href="contacto.html">Contacto</a>
+                    <a href="carrito.html">Carrito</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook de Chinet"><span class="material-symbols-outlined" aria-hidden="true">thumb_up</span></a>
+                        <a href="#" class="social-icon" aria-label="Instagram de Chinet"><span class="material-symbols-outlined" aria-hidden="true">photo_camera</span></a>
+                        <a href="#" class="social-icon" aria-label="Twitter de Chinet"><span class="material-symbols-outlined" aria-hidden="true">tag</span></a>
+                        <a href="#" class="social-icon" aria-label="Telegram de Chinet"><span class="material-symbols-outlined" aria-hidden="true">send</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Chinet. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </main>
+
+    <script src="script.js?v=2" defer></script>
+</body>
+</html>
